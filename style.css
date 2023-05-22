@@ -9,15 +9,24 @@
 }
 
 @font-face {
-    font-family: ROADSTORE;
-    src: url(ROADSTORE\ Dafont.otf);
+    font-family: Amnestiadistressed;
+    src: url(Amnestiadistressed-K71lA.ttf);
 }
+
+@font-face {
+    font-family: hampha;
+    src: url(TheHampha-9Yyy5.ttf);
+}
+
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: tahoma;
-    font-family: ROADSTORE;
+}
+
+body{
+    position: relative;
+    z-index: -3;
 }
 
 header{
@@ -31,10 +40,13 @@ header{
 
 #header{
     display: flex;
+    width: 80%;
     max-width: 1500px;
     margin: auto;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
+    position: relative;
+    font-family: Amnestiadistressed;
 }
 
 .logo{
@@ -48,14 +60,15 @@ header{
     text-transform: uppercase;
     font-size: 25px;
     
+    
 }
 
 
 nav {
     /*border: 2px solid black;*/
     display: flex; 
-    margin-left: auto; 
-    margin: auto;/* jogou a margin para esquerda */
+    /* margin-left: auto; */ 
+    /* jogou a margin para esquerda */
     /*background-color: green;*/
 }
 
@@ -78,7 +91,7 @@ a{
 }
 
 nav a:hover{
-    background-color: #A64B4B;
+    background-color: #B8BFA8;
     
 }
 
@@ -94,41 +107,112 @@ label[for='botao-menu'] {
 }
 
 main{
+    height: 540px;
     position: relative;
-    width: 80%;
-    max-width: 1200px;
-    height: 500px;
-    margin: 0 auto 50px auto;
+    width: 90%;
+    top: -20px;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto 50px auto;   
+    background-color: white;
+    border: 1px solid black;
+    border-top: 2px solid red;
     box-shadow: 1px/*horizontal*/ 2px/*vertical*/ 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 main > div{
-    position: absolute;
+    position: relative;
     height: 100px;
     width: 100px;
     background-color: aqua;
     border: 1px solid black;
 }
 
+.main-section{
+    height: 300px;
+    padding: 5px 10px 0 10px;
+         /*top, direita, baixo, esquerda*/
+    width: 90%;
+    max-width: 95%;
+    margin: 30px auto 40px auto;   
+    border: 1px solid black;
+    border-top: 2px solid red; 
+    font-size: 17px;
+    font-family: tahoma;
+    text-align: center;
+    
+
+}
+
+#serviços{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    
+   
+}
+
+#serviços > div{
+    
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+ 
+    
+}
+
+#serviços  img{
+   width: 45px;
+  
+    
+
+}
+
+.icones{
+    width: 50px;
+    height: 50px;
+    background-color: #A64B4B;
+    border-radius: 50px; 
+    padding: 20px;
+    
+
+}
+
+#serviços div:hover img{
+    background-color: var(--cor2);
+}
+
+
 footer{
     background-color: black;
     height: 35px;
+    
 }
 
-@media (max-width: 930px) {
+
+@media (max-width: 830px) {
     nav{
         display: none;
         flex-direction: column;
         position: absolute;
-        width: 90%;
+        /*width: 90%;*/
         top: 100%;
+        right: 0;
         
-
+      
+        
+        
     }
 
     nav > a{
+        width: 140px;
         height: 65px;
-        background-color: #024873;
+        background-color: var(--cor2);
         
     }
 
@@ -138,19 +222,17 @@ footer{
     }
    
 
-
+    #botao-menu:checked ~ nav{
+        display: block;
+    }    
 }
 
-#botao-menu:checked ~ nav{
-    display: block;
-}
+    /*positio:
 
-/*positio:
-
-static
-relative
-absolut
-fixed
+    static
+    relative
+    absolut
+    fixed
 
 */
 
@@ -164,18 +246,19 @@ fixed
     justify-content: center;
 }
 
-figure{
+#figure{
     margin: auto;
     height:   300px;
-    background-image: url("pexels-barikive-5282408.jpg");
+    background-image: url("imagem/pexels-barikive-5282408.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
     background-size: cover;
+    font-family: Amnestiadistressed;
     
 }
 
-figure{
+#figure{
     font-size: 45px;
 }
 
