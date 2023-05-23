@@ -35,7 +35,7 @@ body{
 }
 
 header{
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: row; /* define a direção se e linha ou coluna */
     /* control+espaço ver opçoes */
@@ -44,6 +44,7 @@ header{
 }
 
 #header{
+    
     display: flex;
     width: 80%;
     max-width: 1500px;
@@ -215,13 +216,10 @@ main > div{
 }
 
 #pessoas > img{
-    width: 230px;
-    
+    width: 230px;   
     display: flex;
     margin: 15px 0 0 0;
     
-
-
 }
 
 
@@ -248,12 +246,65 @@ main > div{
    zoom: 101%;
 }
 
+#pai-form{
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+
+#pai-form > img{
+    width: 180px;
+    
+    border: 3px solid red;
+}
+
+#agradecimento{
+    margin-top: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    border: 1PX solid blue;
+}
+
+
+form{
+    
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+#form{
+    margin-top: 15px;
+    width: 250px;
+    border: 1px solid black;
+}
+
 
 
 footer{
     background-color: black;
-    height: 35px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
     
+}
+
+iframe{
+    width: 180px;
+    height: 180px;
 }
 
 
