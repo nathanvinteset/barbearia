@@ -39,6 +39,7 @@ body{
 
 #header{
     
+   
     display: flex;
     width: 80%;
     max-width: 1500px;
@@ -50,7 +51,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position: fixed;    
     z-index: 1;
     width: 100%;
     display: flex;
@@ -340,8 +341,12 @@ main > div{
 }
 
 #terraria{
+    
     border: 1px solid black;
     display: flex;
+    width: 196px;
+    height: 88px;
+    
 }
 
 form{           
@@ -463,8 +468,9 @@ iframe{
 }
 
 #figure{
+
     margin: auto;
-    height:   300px;
+    height:   400px;
     background-image: url("imagem/pexels-barikive-5282408.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -479,6 +485,7 @@ iframe{
 }
 
 .figura1{
+    
     border-bottom: 1px solid white;
     text-transform: uppercase;
     font-size: 35px;
